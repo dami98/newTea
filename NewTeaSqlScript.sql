@@ -109,3 +109,10 @@ GO
 ALTER DATABASE [NewTea] SET  READ_WRITE 
 GO
 
+CREATE TABLE [dbo].[TeeSorten](
+	[TeeId] [bigint] IDENTITY(1,1) NOT NULL,
+	[TeeNamen] [nvarchar](50) NOT NULL,
+	[Sorte] [nvarchar](50) NULL,
+	[Preis] [bigint] NULL
+) ON [PRIMARY]
+
